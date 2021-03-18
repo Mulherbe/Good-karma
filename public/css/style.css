@@ -1,0 +1,157 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+
+
+}
+                            /* HEADER */
+.header_style{
+    height: 15vh;
+    background-color: rgb(228, 194, 150);
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.footer_style{
+    height: 10vh;
+    background-color: rgb(228, 194, 150);
+    text-align: center;
+	bottom:0px;
+    width: 100%;
+}
+
+.logo{
+    font-size:2vw;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.image_accueil{
+    width: 100%;
+}
+                                        /* BAR NAV */
+.bar_nav{
+    display: flex;
+    font: 1.5vw sans-serif;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.nav_link{
+ color:#691e07;
+ margin: 2px;
+ text-decoration: none
+}
+
+.nav_link:hover {
+    color: #812205;
+    text-decoration: underline overline #8122055e;
+  }
+
+
+
+
+
+
+  .mainboot{
+
+    margin: 1%;
+    padding: 1%;
+
+  }
+
+
+  .containx{
+
+    background: rgba(232, 232, 232, 0.1);
+    margin: 3vh;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.maison{
+    background-color: rgb(232,232,232,0.1);
+    border:2px solid grey;
+    border-radius: 25px;
+    margin: 50px 300px;
+    padding: 5vh 5vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.image{
+
+	margin: 3vh;
+    padding: 2vh;
+    display: flex;
+
+}
+/* NEW */
+                                                    /* MAP */
+.map{
+    text-align: center;
+    margin: 130px;
+}
+.text_map{
+    margin: 0 450px;
+    font-size: 20px;
+}
+                                                    /* Contact */
+.com_card{
+    margin: 100px 400px;
+    font-size: 20px;
+
+}
+
+.button_com{
+    position: absolute;
+     right: 0;
+     margin-top: 25px;
+     margin-right: 55px;
+}
+
+
+                                                    /* Contact*/
+.container_contact{
+    margin: 100px 400px;
+    font-size: 20px;
+
+}
+
+
+.room{
+
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.room2{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.desctitre{
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.piece{
+    padding: 1vh;
+    width: 80%;
+    display: flex;
+    font-size: 1.5em;
+    flex-direction: column;
+}
