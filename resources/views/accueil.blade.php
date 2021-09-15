@@ -7,6 +7,7 @@
         <img  class="image_accueil" src="
                 {{ asset('images/test2.jpg') }}">
 
+                <hr class="hr_index">
 @endsection
 
 

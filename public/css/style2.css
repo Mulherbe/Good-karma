@@ -1,24 +1,46 @@
 body{
         padding: 0px;
         margin: 0px;
-
+        z-index: 1;
         position: relative;
 
 
 }
-                            /* INDEX */
+                            /* HEADER */
+.header_style{
+    height: 20vh;
+    background-color: #cad9ec;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 3;
 
-.reveal{
-
-    opacity: 0;
-    transform: translateY(-30px)
+}
+.logo2{
+    height: 10vh;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.logo2:hover{
+    transform:scale(1.2);
+}
+.ttt{
+    position: relative;
+    z-index: 3;
 }
 
-.reveal-visible{
+.footer_style{
+    height: 10vh;
+    background-color: #cad9ec;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
 
-opacity: 1;
-transform: translateY(0);
-transition: 2s cubic-bezier(.5,0,0,1);
+.logo{
+    font-size:2vw;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 .hr_index{
     height: 2vh;
@@ -30,54 +52,6 @@ transition: 2s cubic-bezier(.5,0,0,1);
     background-color: #663300a6;
     margin: 0;
 }
-
-                            /* HEADER */
-.header_style{
-    height: 20vh;
-  
-    background-color: #cad9ec;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 3;
-
-}
-.logo2{
-    z-index: 7;
-    height: 33vh;
-    margin-left: 70%;
-    margin-top: 20px;
-    position: absolute;
-}
-.logo2:hover{
-    transform:scale(1.2);
-}
-.ttt{
-    position: relative;
-
-}
-
-.footer_style{
-    height: 10vh;
-    background-color: #cad9ec;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    z-index: 3;
-}
-.bande{
-    /* height: 100%;
-    width: 50px;
-    position: absolute;
-    /* background-color: #66330057; */
-   /* background-image: url('images/logo.png');
-    margin-left: 100px;
-    z-index: -2; */
-}
-.logo{
-    font-size:2vw;
-    margin-top: 25px;
-    margin-left: 25px;
-}
 .image_accueil{
     width: 100%;
 }
@@ -85,19 +59,19 @@ transition: 2s cubic-bezier(.5,0,0,1);
 .bar_nav{
     display: flex;
     font: 1.3vw sans-serif;
-    margin-left:5%;
+    margin-left:40%;
     margin-top: 5%;
     position: absolute;
 }
 
 .nav_link{
- color:#663300;
+ color:#663300d3;
  margin:    2px 5px;
  text-decoration: none
 }
 
 .nav_link:hover {
-    color: #812205;
+    color: #663300a6;
     text-decoration: underline overline #8122055e;
   }
 
@@ -135,7 +109,7 @@ transition: 2s cubic-bezier(.5,0,0,1);
 
 .gallery img {
   width: 100%;
-  height: 270px;
+  height: 65%;
 }
 
 .desc {
@@ -150,18 +124,6 @@ transition: 2s cubic-bezier(.5,0,0,1);
   width: 100%;
   height: auto;
 }
-.carou_gal{
-    height: 700px;
-    width: 1200px;
-    margin: auto;
-    padding: 30px;
-  }
-  
-  .carou_gal2{
-    height: 700px;
-    width: 1200px;
-    
-  }
 
 
                                                     /* MAP */
@@ -214,7 +176,7 @@ transition: 2s cubic-bezier(.5,0,0,1);
 }
 
 
-                                                    /* DESCRIPTION*/
+                                                    /* GUADELOUPE*/
 /*  .containx{
     background: rgba(232, 232, 232, 0.1);
     margin: 3vh;
@@ -226,7 +188,7 @@ transition: 2s cubic-bezier(.5,0,0,1);
 
 
 .guaMaison{
-    background-color: rgb(232,232,232,0.2);
+    background-color: rgb(232,232,232,0.5);
 /*    border:1px solid grey;
     border-radius: 25px;*/
     margin: 50px 0px;
@@ -252,16 +214,15 @@ transition: 2s cubic-bezier(.5,0,0,1);
 
 
 .guaRoom{
-    padding: 10px 30px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
 
 }
 
 .guaRoom2{
-    margin: 0 30px;
     min-width: 30vh;
-    width: 80vh;
+    width: 90vh;
     display: flex;
     flex-direction: column;
 
@@ -271,7 +232,7 @@ transition: 2s cubic-bezier(.5,0,0,1);
     font-size: 1.7em;
     font-weight: bold;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 
@@ -283,12 +244,6 @@ transition: 2s cubic-bezier(.5,0,0,1);
     flex-direction: column;
 }
 
-.icon{
-    height: 26px;
-    width: 26px;
-
-}
-
                                                     /* LOGIN*/
 
 .loginForm{
@@ -297,7 +252,7 @@ transition: 2s cubic-bezier(.5,0,0,1);
     padding: 5vh 5vh;
 }
 
-                                                    /* GUADELOUPE*/
+                                                    /* DESCRIPTION*/
 
 
 .maison{
@@ -365,4 +320,19 @@ transition: 2s cubic-bezier(.5,0,0,1);
     .maison{
         flex-direction: column;
     }
+}
+
+
+                                    /* reveal */
+.reveal{
+
+    opacity: 0;
+    transform: translateY(-30px)
+}
+
+.reveal-visible{
+
+opacity: 1;
+transform: translateY(0);
+transition: 2s cubic-bezier(.5,0,0,1);
 }

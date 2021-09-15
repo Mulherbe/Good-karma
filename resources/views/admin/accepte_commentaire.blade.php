@@ -10,14 +10,20 @@
 
 
             {{-- foreach --}}
-        @foreach ($Commentaire as $Commentaire)
+        @forelse ($Commentaire as $Commentaire)
+
             <div class="card text-center mt-3">
                 <div class="card-header">
                     <form action="archive" method="post">
 
                         @csrf
+                    @if (!empty($Commentaire->deleted_at) )
                         <button type="submit" name="online" value="{{ $Commentaire->id }}"class="btn btn-success">Mettre en ligne</button>
-                        <button type="button" name="supprimer" value="{{ $Commentaire->id }}"class="btn btn-danger">Supprimer</button>
+                    @else
+                        <button type="submit" name="archive" value="{{ $Commentaire->id }}" class="btn btn-warning">Archiver</button>
+                    @endif
+                        <button type="submit" name="supprimer" value="{{ $Commentaire->id }}"class="btn btn-danger">Supprimer</button>
+
 
                     </form>
 
@@ -26,10 +32,10 @@
                     {{ $Commentaire->nom }}  {{ $Commentaire->prenom }}
 
                 @else
-                    Anonyme
+                [Anonyme] {{ $Commentaire->nom }}  {{ $Commentaire->prenom }}
+
 
                 @endif
-
                 </div>
 
                 <div class="card-body">
@@ -43,8 +49,10 @@
             </div>
 
 
+            @empty
+            Pas de nouveau commentaire
             {{-- end foreach --}}
-            @endforeach
+            @endforelse
 
 
 

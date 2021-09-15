@@ -13,6 +13,7 @@
             {{-- foreach --}}
         @foreach ($Commentaire as $Commentaire)
             <div class="card text-center mt-3">
+                <hr class="hr_footer">
                 <div class="card-header">
 
                 @if(empty($Commentaire->anonyme))

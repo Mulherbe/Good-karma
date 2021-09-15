@@ -2,8 +2,16 @@
 @extends('bar_nav')
 @section('content')
 <style>
-
-
+.btn_supp {
+    height: 30px;
+    background-color: rgb(238, 16, 16);
+    color: black;
+}
+.btn_modif{
+    height: 30px;
+    background-color: rgb(207, 136, 5);
+    color: black;
+}
   </style>
   
 
@@ -45,15 +53,27 @@
     
    
     
-
-  
+<form action="ajout_img" method='get'>
+  <button type="submit" name="archive" value="add" class="btn btn-warning">Ajouter une image</button>
+</form>
     <div class="galleryBox">
   
       @foreach ($Image as $Img)
+      <div class="gallery">
+      <div >
+        <form action="modifier_img" method="get">
+            @csrf
+            <button type="submit" name="supprimer" value="{{ $Img->id }}"class=" btn_supp btn btn-danger">Supprimer</button>
 
-      <a type="button" data-toggle="modal" data-target=".bd-example-modal-lg{{ $Img->id }}">    <div class="gallery">
+            <button type="submit" name="modif" value="{{ $Img->id }}" class="btn_modif btn ">Modifier</button>
+        </form>
+      </div>
+
+      <a type="button" data-toggle="modal" data-target=".bd-example-modal-lg{{ $Img->id }}">   
+
+  
       
-     
+        
           <img src="storage/{{ $Img->nom }}.{{ $Img->type }}"  >
 
       </div></a>
@@ -72,17 +92,6 @@
       </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection
+
+

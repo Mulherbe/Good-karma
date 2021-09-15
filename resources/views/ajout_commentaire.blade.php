@@ -9,19 +9,19 @@
         @csrf
     <div class="form-group">
         <label for="exampleFormControlInput1">Nom </label>
-        <input type="text" class="form-control" name="nom" placeholder="Nom">
+        <input type="text" class="form-control" name="nom "  minlength="2" maxlength="25" required placeholder="Nom">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Prenom </label>
-        <input type="text" class="form-control" name="prenom" placeholder="Prenom">
+        <input type="text" class="form-control"  name="prenom"  minlength="2" maxlength="25" required placeholder="Prenom">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Titre </label>
-        <input type="text" class="form-control" name="titre" placeholder="Titre">
+        <input type="text" class="form-control" name="titre" minlength="5" maxlength="25" required placeholder="Titre">
       </div>
 
     <label for="exampleFormControlTextarea1">Votre message</label>
-    <textarea class="form-control" name="texte" rows="8"></textarea>
+    <textarea class="form-control" name="texte"  minlength="15" maxlength="600" required rows="8"></textarea>
     <br>
 
     <div class="form-check">
@@ -34,7 +34,5 @@
     </form>
 
 </div>
-@php
- var_dump($_POST);
-@endphp
+
 @endsection
